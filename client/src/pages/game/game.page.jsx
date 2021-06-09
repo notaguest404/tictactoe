@@ -145,7 +145,7 @@ const GamePage = ({ location }) => {
         </div>
       </div>
       <div className="scores-container">
-        <h1 style={{color:'white'}}>Room: {room}</h1>
+        <h1 className="roomhero" >Room: {room}</h1>
         <Scores
           player={player}
           player1Score={player1Score}

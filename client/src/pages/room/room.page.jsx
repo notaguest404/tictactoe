@@ -25,10 +25,10 @@ const RoomPage = () => {
           <em>create</em> a room and copy the <em>ID</em> to invite your
           opponent
         </p>
-        <div className="form">
+        <div className="form createForm">
           <ClickToCopy content={newRoom} />
           <Link to={`/game?room=${newRoom}&player=${"cross"}`}>
-            <Button content="create" />
+            <Button className="createbutton" content="create" />
           </Link>
         </div>
       </div>
@@ -37,7 +37,7 @@ const RoomPage = () => {
           or <br />
           <em>join</em> an existing room by copying the link{" "}
         </p>
-        <div className="form">
+        <div className="form joinForm">
           <input
             maxlength="8"
             className="input-text"
@@ -48,10 +48,10 @@ const RoomPage = () => {
             }}
           />
           <Link to={`/game?room=${room}&player=${"circle"}`}>
-            <Button content="join" />
+            <Button className="joinbutton" content="join" />
           </Link>
         </div>
-        <Github />
+      
       </div>
     </div>
     </div>
