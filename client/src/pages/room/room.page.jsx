@@ -25,7 +25,7 @@ const RoomPage = () => {
         <div className="form">
           <ClickToCopy content={newRoom} />
           <Link to={`/game?room=${newRoom}&player=${"cross"}`}>
-            <Button content="create" />
+            <Button className="createbutton" content="create" />
           </Link>
         </div>
       </div>
@@ -45,7 +45,7 @@ const RoomPage = () => {
             }}
           />
           <Link to={`/game?room=${room}&player=${"circle"}`}>
-            <Button content="join" />
+            <Button className="joinbutton" content="join" />
           </Link>
         </div>
       
