@@ -48,7 +48,7 @@ const RoomPage = () => {
             <Button content="join" />
           </Link>
         </div>
-        <Github />
+      
       </div>
     </div>
   );
