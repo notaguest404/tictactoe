@@ -11,6 +11,7 @@ import Turns from "../../components/turns/turns.component";
 import { ReactComponent as Cross96px } from "../../assets/cross-96px.svg";
 import { ReactComponent as Circle96px } from "../../assets/circle-96px.svg";
 import Scores from "../../components/scores/scores.component";
+import Header from "../../components/header"
 import {
   playerWinHoriz,
   playerWinVert,
@@ -112,6 +113,8 @@ const GamePage = ({ location }) => {
   }, [grid]);
 
   return (
+    <div>
+      <Header />
     <div className="gamePage">
       <div className="players-container">
         <Turns player={player} turn={player2Turn ? 2 : 1} />
@@ -142,7 +145,7 @@ const GamePage = ({ location }) => {
         </div>
       </div>
       <div className="scores-container">
-        <h1>Room: {room}</h1>
+        <h1 style={{color:'white'}}>Room: {room}</h1>
         <Scores
           player={player}
           player1Score={player1Score}
@@ -176,6 +179,7 @@ const GamePage = ({ location }) => {
         <h2>CIRCLE PLAYER WON</h2>
         <p>Click anywhere to launch the next round</p>
       </div>
+    </div>
     </div>
   );
 };

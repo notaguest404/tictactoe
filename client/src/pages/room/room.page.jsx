@@ -6,6 +6,7 @@ import Button from "../../components/button/button.component";
 import Github from "../../components/github/github.component";
 import ClickToCopy from "../../components/click-to-copy/click-to-copy.component";
 import { makeRoomId } from "../../utils";
+import Header from "../../components/header"
 
 const RoomPage = () => {
   const [room, setRoom] = useState("");
@@ -16,6 +17,8 @@ const RoomPage = () => {
   }, []);
 
   return (
+    <div>
+      <Header />
     <div className="roomPage">
       <div className="create-container">
         <p className="text">
@@ -50,6 +53,7 @@ const RoomPage = () => {
         </div>
         <Github />
       </div>
+    </div>
     </div>
   );
 };

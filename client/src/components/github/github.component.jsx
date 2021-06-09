@@ -5,9 +5,9 @@ import "./github.styles.scss";
 
 const Github = () => {
   return (
-    <div className="github">
-      <p>made by quentingrchr</p>
-      <a href="https://github.com/quentingrchr">
+    <div className="github" style={{marginTop:'100px'}}>
+      <p>made by brunomatos & laylaandrade and adapted from quentingrchr</p>
+      <a href="https://github.com/notaguest404/tictactoe">
         <GithubIcon />
       </a>
     </div>
