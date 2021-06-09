@@ -7,7 +7,7 @@ const Github = () => {
   return (
     <div className="github" style={{marginTop:'100px'}}>
       <p>made by brunomatos & laylaandrade and adapted from quentingrchr</p>
-      <a href="https://github.com/notaguest404/tictactoe">
+      <a href="https://github.com/">
         <GithubIcon />
       </a>
     </div>
