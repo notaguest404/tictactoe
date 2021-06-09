@@ -8,11 +8,11 @@ const Turns = ({ turn, player }) => {
   return (
     <div className="turns">
       <div className={`turn your-turn ${turn === 1 ? "active" : null}`}>
-        <p>it’s {player === "cross" ? "your" : "his"} turn</p>
+        <p>it’s {player === "cross" ? "my" : "your"} turn</p>
         <Cross32pxIcon />
       </div>
       <div className={`turn your-turn ${turn === 2 ? "active" : null}`}>
-        <p>it’s {player === "circle" ? "your" : "his"} turn</p>
+        <p>it’s {player === "circle" ? "my" : "your"} turn</p>
         <Circle32pxIcon />
       </div>
     </div>
