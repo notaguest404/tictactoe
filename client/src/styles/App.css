@@ -48,6 +48,15 @@ body{
   margin: auto;
 }
 
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+
 .register-item {
   align-self: flex-start;
 }

@@ -47,8 +47,8 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <Row style={{display:'flex', justifyContent:'space-around', alignItems:'center', minHeight:'75vh'}}>
+      <div className="loginPage">
+        <Row gutter={48} style={{display:'flex', alignItems:'center', minHeight:'75vh'}} justify="space-around">
           <Col span={12} >
             <div>
               <div>
